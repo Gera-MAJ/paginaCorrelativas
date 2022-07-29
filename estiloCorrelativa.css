@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 1000px;
+}
+.bloque {
+    display: none;
+}
+#cont_deportivas {
+    display: none;
+}
+#cont_exactas {
+    display: none;
+}
+#cont_idiomas {
+    display: none;
+}
+#cont_naturales {
+    display: none;
+}
+#cont_nivel {
+    display: none;
+}
+#cont_sociales {
+    display: none;
+}
+#cont_tecnologia {
+    display: none;
+}
+.sub_menu ul li a{
+    text-decoration: none;
+    color: #05121a;
+}
+
+@media only screen and (max-width: 1000px) {
+    #contenedor {
+        height: 1000px;
+    }
+    .imagen {
+        padding-left: 45px;
+        width: 260px;
+        height: 150px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    /* animacion simple que se ejecuta en todas las fotos */
+    img {
+        animation-name: mover;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes mover {
+        0% {
+            transform: scale(1.01);
+        }
+        100%{
+            tansform: scale(1.05);
+        }
+    }
+    .boton {
+        width: 280px;
+        border: 0px;
+        margin: 0px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 3px;
+        background: linear-gradient(to right, #08A6D6, #76a5b4);
+        margin-left: 35px;
+    }
+    .boton:hover {
+        cursor: pointer;
+        box-shadow: 5px 5px 20px -11px #061e24;
+        color: #fbf8f8;
+        font-style: italic;
+        transition: all 200ms;
+    }
+    .sub_menu {
+        width: 300px;
+        color: aliceblue;   
+    }
+
+    .sub_menu ul li{
+        width: 280px;
+        margin: 10px 0px 10px 35px;
+        height: 40px;
+        border-radius: 3px;   
+        text-align: center;
+        position: relative;
+    }
+
+    .sub_menu ul li a {
+        position: absolute;
+        width: 280px;
+        right: 2%;
+        top: 50%;
+        -webkit-transform: translateY(-50%); 
+        /* Esto es para lograr centrar el texto en el eje x, si o sí  tiene que estar acompañado de un padre con la position relative */
+        padding-left: 10px;
+    }
+    .sub_menu ul li a:hover {
+        color: #fbf8f8;
+        transition: all 100ms;
+    }
+
+    .sub_menu ul li:hover{
+        background-color: #3ec8f1;
+        transition: all 150ms;
+    }
+
+    .sub_menu ul li a:hover{
+        color: #fbf8f8;
+    }
+    }
+    #titulo {
+        margin-left: 310px;
+        margin-top: 50px;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #168BCD;
+    }
+    .caja_1 {
+        float: left;
+    }
+    .caja_2 {
+        float: left;
+    }
+    #caja_idiomas {
+        float: left;
+    }
+
+@media only screen and (max-width: 400px) {
+   
+    .imagen {
+        display: none;
+    }
+    .sub_menu ul li:hover{
+        background-color: #3ec8f1;
+        transition: all 150ms;
+    }
+
+    .sub_menu ul li a:hover{
+        color: #fbf8f8;
+    }
+  
+    #deportivas li {
+        position: relative;
+        text-align: center;
+        margin: 10px;
+        transition: all 500ms;
+        padding-top: 15px;
+        height: 30px;
+    }
+    #exactas li {
+        position: relative;
+        margin: 10px;
+        text-align: center;
+        transition: all 500ms;
+        padding-top: 5px;
+    }
+    #idiomas li {
+        position: relative;
+        margin: 5px;
+        text-align: center;
+        transition: all 500ms;
+        padding-top: 15px;
+        height: 30px;
+    }
+    #naturales li {
+        position: relative;
+        margin: 5px;
+        text-align: center;
+        transition: all 500ms;
+        padding-top: 5px;
+    }
+    #nivel li {
+        position: relative;
+        margin: 10px;
+        text-align: center;
+        transition: all 500ms;
+        padding-top: 15px;
+        height: 30px;
+    }
+    #sociales li {
+        position: relative;
+        margin: 10px;
+        text-align: center;
+        transition: all 500ms;
+        padding-top: 5px;
+    }
+    #tecnologia li {
+        position: relative;
+        margin: 10px;
+        text-align: center;
+        transition: all 500ms;
+        padding-top: 5px;
+    }
+    .sub_menu ul {
+        margin-top: 10px;
+    }
+
+    #titulo {
+        font-size: 30px;
+        margin-left: 70px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: #168BCD;
+
+        animation-name: titulo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes titulo {
+        0%{
+            color: #08A6D6;
+        }
+        50%{
+            color:#061e24;
+        }
+        100%{
+            color: #168BCD;
+        } 
+    }
+
+    #contenedor {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .boton {
+        width: 280px;
+        border: 0px;
+        margin: 5px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 3px;
+        background: linear-gradient(to right, #08A6D6, #76a5b4);
+        transition: all 300ms;
+    }
+
+
+    .boton:hover {
+        cursor: pointer;
+        box-shadow: 5px 5px 20px -11px #061e24;
+        color: #fbf8f8;
+        transition: all 200ms;
+    }
+
+    .sub_menu {
+       display: flex;
+       width: 300px;
+       color: aliceblue;
+       margin-left: 45px;
+       align-items: center;
+       flex-direction: column;
+    }
+
+}
+
